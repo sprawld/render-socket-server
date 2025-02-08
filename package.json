@@ -1,15 +1,8 @@
 {
   "name": "render-socket-server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sprawld/render-socket-server.git"
-  },
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -17,7 +10,23 @@
     "url": "https://github.com/sprawld/render-socket-server/issues"
   },
   "homepage": "https://github.com/sprawld/render-socket-server#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sprawld/render-socket-server.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "svelte": "^5.19.6",
+    "vite": "^6.1.0"
   }
 }
